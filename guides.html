@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lucky "Luckstruck9" Lai</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" href="images/kiritoAlicization.PNG">
+    </head>
+
+    <body>
+        <div class="header" style="background-image: url('images/headerbackground.png'); background-position: top; background-size: 100% 50%; background-repeat: no-repeat;">
+            <div align="center" style="height: 5%; width: 100%; background-image: url('images/Panel.png'); background-position: center;
+                     background-size: 60% 100%; background-repeat: no-repeat;">
+                <!--Put Website Name and Picture Here-->
+                <img src="images/name.png" style="width: 25%; padding-top:1%;">
+            </div>
+            <div class="topnav">
+                <!--        Navigation Links        -->
+                <a href=index.html>Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" href="guides.html">Tutorials/Guides</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="columnL" class="columnLeft">
+                <iframe height=50% width=100% src="https://www.youtube.com/embed/oFbXt6AGtC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="columnR" class="columnRight">
+                <a class="twitter-timeline" href="https://twitter.com/luckstruck9?ref_src=twsrc%5Etfw" data-tweet-limit="1">Tweets by luckstruck9</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div class="center">
+                <div class="grid-container" style="background-image: url('images/Panel2.png'); background-size: 100% 100%; background-position: center; padding-top: 1%; padding-bottom: 1%;">
+                    <div class="grid-item">
+                        <br>
+                        <a class="neatLink" href="https://docs.google.com/document/d/12difNPvrMEgyaHhgqOYBgYgdroMC-2FjJXFB09FAyjY/edit?usp=sharing" target="_blank">Installing SSBM on a Wii</a>
+                    </div>
+                    <div class="grid-item">
+                        <p>This is a written guide for installing Super Smash Bros. Melee onto a Wii. This allows you to play Super Smash Bros. Melee with just an SD card, and for zero price.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/davislai/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.twitch.tv/Luckstruck9" target="_blank" class="fa fa-twitch" ></a>
+            <a href="https://github.com/Luckstruck9" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.youtube.com/channel/UCUm5n0BBQGmRgLmIYtiLxTg" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/luckstruck9?lang=en" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/luckycharmslai/?hl=en" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://steamcommunity.com/id/Luckstruck9" target="_blank" class="fa fa-steam"></a>
+        </div>
+        <div style="text-align: left; left:0%; bottom:0; position: fixed;">
+            <img src="images/piplup.gif" style="height: 20%; width:20%;">
+        </div>
+
+        <script>
+            window.onscroll = function() {columnStick()};
+
+            var columnL = document.getElementById("columnL");
+            var columnR = document.getElementById("columnR");
+
+            var offset = columnL.offsetTop;
+
+            function columnStick()
+            {
+                if (window.pageYOffset>offset)
+                {
+                    columnL.classList.add("sticky");
+                    columnR.classList.add("sticky");
+                }
+                else
+                {
+                    columnL.classList.remove("sticky");
+                    columnR.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>

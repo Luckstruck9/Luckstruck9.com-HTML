@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lucky "Luckstruck9" Lai</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" href="images/kiritoAlicization.PNG">
+    </head>
+
+    <body>
+        <div class="header" style="background-image: url('images/headerbackground.png'); background-position: top; background-size: 100% 50%; background-repeat: no-repeat;">
+            <div align="center" style="height: 5%; width: 100%; background-image: url('images/Panel.png'); background-position: center;
+                     background-size: 60% 100%; background-repeat: no-repeat;">
+                <!--Put Website Name and Picture Here-->
+                <img src="images/name.png" style="width: 25%; padding-top:1%;">
+            </div>
+            <div class="topnav">
+                <!--        Navigation Links        -->
+                <a href=index.html>Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="projects.html">Projects</a>
+                <a href="guides.html">Tutorials/Guides</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="columnL" class="columnLeft">
+                <iframe height=50% width=100% src="https://www.youtube.com/embed/oFbXt6AGtC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="columnR" class="columnRight">
+                <a class="twitter-timeline" href="https://twitter.com/luckstruck9?ref_src=twsrc%5Etfw" data-tweet-limit="1">Tweets by luckstruck9</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div class="center">
+                <div style="background-image: url('images/Panel2.png'); background-size: 100% 100%; background-position: center;   padding-bottom: 1%;">
+                    <h2 style="margin-bottom: 0">
+                        Bio:
+                    </h2>
+                    <p style="margin-top: 0; text-indent: 3em; margin-left: 1%; margin-right: 1%" align="left">
+                        I was born and raised in New York City. I attended The Ethical Culture Fieldston School in Bronx, NY for Middle and High School.
+                        I then went on to attend Oberlin College in Oberlin, OH. I graduated from Oberlin College in Summer 2021 with a major in Computer Science.
+                    </p>
+                    <br>
+                    <p style="margin-top: 0; text-indent: 3em; margin-left: 1%; margin-right: 1%" align="left">
+                        I was the President of the <a class="neatLink" href="https://sites.google.com/view/oberlinesportsclub">Oberlin Esports Club</a>.
+                        I was also a Tournament Organizer and Manager for <a class="neatLink" href="https://sites.google.com/view/OberlinSmash">Oberlin Smash</a> (a subdivision of the Oberlin eSports Club).
+                        My duties for Oberlin Smash involve creating events, informing the community, and creating/managing the <a class="neatLink" href="https://twitch.tv/OberlinSmash">Oberlin Smash Twitch</a>.
+                    </p>
+    
+                </div>
+                
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSCjK5UAJzdst4KuSgUJfu_4Ws9NhYC2MCJ6oU9XZPKjmwodrl46oikALFt_PsWRJGpOBOxRC_FFr3o/pub?embedded=true" width=100% height=800px></iframe>
+
+                <div style="background-image: url('images/Panel2.png'); background-size: 100% 100%; background-position: center; padding-top: 1%; padding-bottom: 10%;">
+                    <h2>
+                        My Name
+                    </h2>
+                    <p>
+                        My legal first name is Davis. However, it is not the name I use.
+
+                    </p>
+
+                    <p>
+                        While Lucky is not my legal name, it was given to me before my birth.
+                        My parents thought it sounded like my mother's maiden name, Lau-Kee,
+                        and thought it was cute. I have been using this name my entire life.
+                        I do not object to people calling me Davis, but I am usually not as responsive.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/davislai/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.twitch.tv/Luckstruck9" target="_blank" class="fa fa-twitch" ></a>
+            <a href="https://github.com/Luckstruck9" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.youtube.com/channel/UCUm5n0BBQGmRgLmIYtiLxTg" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/luckstruck9?lang=en" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/luckycharmslai/?hl=en" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://steamcommunity.com/id/Luckstruck9" target="_blank" class="fa fa-steam"></a>
+        </div>
+        <div style="text-align: left; left:0%; bottom:0; position: fixed;">
+            <img src="images/piplup.gif" style="height: 20%; width:20%;">
+        </div>
+
+        <script>
+            window.onscroll = function() {columnStick()};
+
+            var columnL = document.getElementById("columnL");
+            var columnR = document.getElementById("columnR");
+
+            var offset = columnL.offsetTop;
+
+            function columnStick()
+            {
+                if (window.pageYOffset>offset)
+                {
+                    columnL.classList.add("sticky");
+                    columnR.classList.add("sticky");
+                }
+                else
+                {
+                    columnL.classList.remove("sticky");
+                    columnR.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
